@@ -1,0 +1,153 @@
+body {
+	font-family: 'Kdam Thmor Pro', sans-serif;
+	min-height: 80vh;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.bold {
+	font-weight: 900;
+}
+
+.grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: flex-start;
+	padding: 5px;
+
+	& .left {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: 1fr;
+	}
+}
+
+.tracks {
+	display: flex;
+	gap: .2rem;
+	flex-direction: column;
+	border-radius: 10px;
+	letter-spacing: 2px;
+
+	& .track {
+		background-color: #f9f9f9;
+		padding: 10px;
+		border: 1px solid #e7e7e7;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #FFF;
+		}
+	}
+}
+
+.right {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.viewTrack {
+	display: none;
+	gap: 1.5rem;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	background-color: #f9f9f9;
+	padding: 20px;
+	border: 1px solid #e7e7e7;
+	border-radius: 10px;
+
+	& .image img {
+		border-radius: 50%;
+	}
+
+	& .info {
+		font-size: 1.3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		line-height: 2rem;
+	}
+
+	& .info .artist-name {
+		font-size: 1rem;
+	}
+
+	& a {
+		text-decoration: none;
+	}
+
+	& a,
+	& a:visited,
+	& a:focus {
+		color: #000;
+	}
+}
+
+
+/* form styling */
+.form {
+	width: 365px;
+	margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+	margin: 5px 0;
+	display: block;
+	min-width: 330px;
+	padding: 10px 16px;
+	border-radius: 4px;
+	font-size: 17px;
+	border: 1px solid #dddfe2;
+	color: #404040;
+	font-family: inherit;
+	transition: 0.2s;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+	border-bottom: 2.5px solid #187dd8;
+}
+
+input[type=button],
+input[type=submit],
+select,
+select option {
+	min-width: 363px;
+	/* height: 56px; */
+	background-color: #187dd8;
+	color: #FFF;
+	font-weight: bold;
+	letter-spacing: 2px;
+	cursor: pointer;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+form input[type=button]:hover,
+form input[type=submit]:hover,
+form select:hover,
+form select option:hover {
+	background-color: #0088ff;
+}
+
+form input[type="text"]::placeholder,
+form input[type="password"]::placeholder,
+form textarea::placeholder {
+	color: #8b8b8b;
+}
+
+form input:focus {
+	border: 1px solid #9fb6d2;
+	box-shadow: 0 0 0 2px #edf5fd;
+	outline: none !important;
+}

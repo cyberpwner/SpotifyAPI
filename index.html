@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Spotify API</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!-- import de la fuente usada -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Titillium+Web&display=swap"
+			rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="grid">
+			<section class="left">
+				<form id="search_music" action="">
+					<fieldset>
+						<div class="form">
+							<label for="genre">Genre:</label>
+							<select name="genre" id="genre">
+								<option value="">Select</option>
+							</select>
+
+							<label for="playlist">Playlist:</label>
+							<select name="playlist" id="playlist">
+								<option value="">Select</option>
+							</select>
+
+							<input type="submit" id="btnSearch" value="Search" disabled>
+						</div>
+					</fieldset>
+				</form>
+
+				<div id="tracks" class="tracks"></div>
+			</section>
+
+			<section class="right">
+				<div id="viewTrack" class="viewTrack">
+					<div id="image" class="image"></div>
+					<div id="info" class="info"></div>
+				</div>
+			</section>
+		</div>
+
+		<!-- My Script -->
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
